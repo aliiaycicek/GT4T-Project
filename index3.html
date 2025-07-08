@@ -11,17 +11,15 @@
   <header class="header">
     <div class="header__container">
       <div class="header__logo">GreenTech 4 Transformation</div>
+      <button id="theme-toggle" class="theme-toggle"><span class="theme-toggle__icon">🌙</span></button>
       <nav class="header__nav">
         <ul class="header__menu">
-          <li class="header__menu-item">Home</li>
-          <li class="header__menu-item">About</li>
-          <li class="header__menu-item header__menu-item--partners">
-            Partners
-            <span class="header__badge">142</span>
-          </li>
-          <li class="header__menu-item">Resources</li>
-          <li class="header__menu-item">News</li>
-          <li class="header__menu-item">Contact</li>
+          <li class="header__menu-item"><a href="index3.html">Home</a></li>
+          <li class="header__menu-item"><a href="about.html">About</a></li>
+          <li class="header__menu-item header__menu-item--partners"><a href="partners.html">Partners <span class="header__badge">142</span></a></li>
+          <li class="header__menu-item"><a href="resources.html">Resources</a></li>
+          <li class="header__menu-item"><a href="#">News</a></li>
+          <li class="header__menu-item"><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -121,38 +119,46 @@
   <!-- Proje Zaman Çizelgesi ve Destekçiler Bölümü -->
   <section class="project-details">
     <div class="project-details__container">
-      <!-- Proje Koordinatörü Kartı -->
       <div class="coordinator-card">
-        <span class="coordinator-card__stripe"></span>
-        <img src="assets/images/HomeScreen/netherlands_flag.png" alt="Netherlands Flag" class="coordinator-card__flag" />
-        <div class="coordinator-card__info">
-          <p class="coordinator-card__name">Ali Tavakoli</p>
-          <p class="coordinator-card__org">Satakunnan Koulutuskuntayhtymä</p>
+        <div class="coordinator-card__img">
+          <img src="assets/images/koordinator.jpg" alt="Ali Tavakoli">
+          <span class="coordinator-card__role">Project Coordinator</span>
         </div>
-        <a href="#" class="coordinator-card__contact">
-          get contact
-          <img src="assets/icons/arrow-right.png 5.png" alt="Arrow Right" />
-        </a>
+        <div class="coordinator-card__info">
+          <h3 class="coordinator-card__name">Ali Tavakoli</h3>
+          <p class="coordinator-card__org">Satakunnan Koulutuskuntayhtymä</p>
+          <a href="mailto:ali@example.com" class="coordinator-card__contact">
+            get contact
+            <span class="coordinator-card__arrow"></span>
+          </a>
+        </div>
       </div>
-      <!-- Proje Zaman Çizelgesi Kartı -->
       <div class="timeline-card">
         <h3 class="timeline-card__title">Project Timeline</h3>
         <div class="timeline">
-          <div class="timeline__milestone">
+          <div class="timeline__item">
             <span class="timeline__date">Apr 2025</span>
             <span class="timeline__phase">Phase 1</span>
           </div>
-          <div class="timeline__milestone">
+          <div class="timeline__item">
             <span class="timeline__date">Dec 2025</span>
             <span class="timeline__phase">Phase 2a</span>
           </div>
-          <div class="timeline__milestone">
+          <div class="timeline__item">
             <span class="timeline__date">Jan 2026</span>
             <span class="timeline__phase">Phase 2b</span>
           </div>
-          <div class="timeline__milestone">
+          <div class="timeline__item">
             <span class="timeline__date">Dec 2026</span>
             <span class="timeline__phase">Phase 3</span>
+          </div>
+          <div class="timeline__item">
+            <span class="timeline__date">Jan 2027</span>
+            <span class="timeline__phase">Phase 4</span>
+          </div>
+          <div class="timeline__item">
+            <span class="timeline__date">Apr 2027</span>
+            <span class="timeline__phase">Phase 5</span>
           </div>
         </div>
       </div>
@@ -185,8 +191,9 @@
       <div class="footer__info">
         <a href="#" class="footer__brand">GreenTech4Transformation</a>
         <div class="footer__logos">
-          <img src="assets/images/eit-rawmaterials-logo.png" alt="EIT RawMaterials Logo" />
-          <img src="assets/images/eu-logo.png" alt="EU Logo" />
+          <div class="footer__logos-combined">
+            <img src="assets/images/EIT RawMaterials_idVr4Kje83_1 1.png" alt="EIT RawMaterials Logo" class="footer__logo-img" />
+          </div>
         </div>
         <div class="footer__socials">
           <ul>
@@ -218,5 +225,6 @@
       </div>
     </div>
   </footer>
+  <script src="scripts/main.js"></script>
 </body>
 </html> 
