@@ -86,7 +86,7 @@ const reinitializeDynamicScripts = () => {
 // SPA geçişleri (fetch + History API)
 document.addEventListener('DOMContentLoaded', () => {
   const mainContent = document.getElementById('main-content');
-  const mainNav = document.querySelector('.main-nav');
+  const mainNav = document.querySelector('.header__nav');
 
   if (!mainContent || !mainNav) {
     reinitializeDynamicScripts();
