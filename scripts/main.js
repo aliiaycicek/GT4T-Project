@@ -1,21 +1,24 @@
-// Karanlık tema geçişi ve localStorage yönetimi
-function setupThemeToggle() {
-  const btn = document.getElementById('theme-toggle');
-  if (!btn) return;
-  btn.addEventListener('click', () => {
-    document.body.classList.toggle('dark-mode');
-    if (document.body.classList.contains('dark-mode')) {
-      localStorage.setItem('theme', 'dark');
-      btn.querySelector('.theme-toggle__icon').textContent = '☀️';
-    } else {
-      localStorage.setItem('theme', 'light');
-      btn.querySelector('.theme-toggle__icon').textContent = '🌙';
-    }
-  });
+// Karanlık tema geçişi ve localStorage yönetimi (yeni switch bar için)
+function setupThemeSwitchBar() {
+  const switchInput = document.getElementById('theme-switch-toggle');
+  if (!switchInput) return;
+  // İlk yüklemede localStorage'a göre ayarla
   if (localStorage.getItem('theme') === 'dark') {
     document.body.classList.add('dark-mode');
-    btn.querySelector('.theme-toggle__icon').textContent = '☀️';
+    switchInput.checked = true;
+  } else {
+    document.body.classList.remove('dark-mode');
+    switchInput.checked = false;
   }
+  switchInput.addEventListener('change', () => {
+    if (switchInput.checked) {
+      document.body.classList.add('dark-mode');
+      localStorage.setItem('theme', 'dark');
+    } else {
+      document.body.classList.remove('dark-mode');
+      localStorage.setItem('theme', 'light');
+    }
+  });
 }
 
 // Scroll animasyonları (Intersection Observer)
@@ -77,7 +80,7 @@ function setupRippleEffect() {
 
 // SPA geçişlerinde ve ilk yüklemede dinamik scriptleri başlatan ana fonksiyon
 const reinitializeDynamicScripts = () => {
-  setupThemeToggle();
+  setupThemeSwitchBar();
   setupScrollAnimations();
   setupRippleEffect();
   // ...diğer dinamik scriptler...
