@@ -151,3 +151,16 @@ document.addEventListener('DOMContentLoaded', () => {
   // İlk yüklemede de dinamik scriptleri başlat
   reinitializeDynamicScripts();
 });
+
+// Partner card Read More açılır/kapanır
+
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.read-more-btn').forEach(function(btn) {
+    btn.addEventListener('click', function(e) {
+      e.preventDefault();
+      var card = btn.closest('.partner-card-large');
+      card.classList.toggle('expanded');
+      btn.style.display = 'none';
+    });
+  });
+});
