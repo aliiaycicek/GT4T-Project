@@ -3,11 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Resource | GreenTech 4 Transformation</title>
+  <title>News | GreenTech 4 Transformation</title>
   <link rel="stylesheet" href="styles/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Poppins:wght@500;600;700&family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Header (Daha öncekiyle aynı) -->
   <header class="gt4-header">
     <div class="container">
       <a href="index.html" class="logo">GreenTech 4 Transformation</a>
@@ -17,30 +19,34 @@
           <li class="header__menu-item"><a href="index3.html">Home</a></li>
           <li class="header__menu-item"><a href="about.html">About</a></li>
           <li class="header__menu-item"><a href="partners.html">Partners</a></li>
-          <li class="header__menu-item"><a href="resources.html" class="active">Resources</a></li>
-          <li class="header__menu-item"><a href="#">News</a></li>
+          <li class="header__menu-item"><a href="news.html" class="active">News</a></li>
           <li class="header__menu-item"><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
-
-  <main class="resources-page">
+  <main class="news-page">
     <div class="container">
-      <h1 class="resources-page__title animate">Resource</h1>
-      <div class="video-wrapper">
-        <video class="main-video" controls poster="assets/images/Video placeholder.png">
-          <source src="assets/videos/main-resource.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
+      <h1 class="news-page__title">News</h1>
+      <div class="news-slider">
+        <button class="news-slider__arrow news-slider__arrow--left" aria-label="Previous news">&#8592;</button>
+        <div class="news-card">
+          <h2 class="news-card__headline">GT4T launches Europe-wide green innovation challenge for universities and startups in 2024</h2>
+          <div class="news-card__media">
+            <img src="assets/images/Video placeholder.png" alt="News Media" class="news-card__img" />
+            <!-- Video örneği için aşağıdaki satırı kullanabilirsin -->
+            <!-- <video controls class="news-card__video"><source src="assets/videos/main-resource.mp4" type="video/mp4"></video> -->
+          </div>
+          <div class="news-card__content">
+            <p>GreenTech 4 Transformation (GT4T) is launching a Europe-wide challenge to empower universities and startups to co-create sustainable solutions for the circular economy, digital transformation, and clean energy. The initiative will provide funding, mentorship, and access to a unique innovation ecosystem. Applications open in March 2024 and are open to all higher education institutions and early-stage startups across Europe.</p>
+          </div>
+        </div>
+        <button class="news-slider__arrow news-slider__arrow--right" aria-label="Next news">&#8594;</button>
       </div>
     </div>
   </main>
-
-  <!-- Footer (Daha öncekiyle aynı) -->
   <footer class="footer">
     <div class="footer__container">
-      <!-- Sütun 1: Marka ve Sosyal Medya -->
       <div class="footer__info">
         <a href="#" class="footer__brand">GreenTech4Transformation</a>
         <div class="footer__logos">
@@ -56,7 +62,6 @@
           </ul>
         </div>
       </div>
-      <!-- Sütun 2: Pages Linkleri -->
       <div class="footer__links">
         <h4 class="footer__title">Pages</h4>
         <ul>
@@ -66,7 +71,6 @@
           <li><a href="#">Blog</a></li>
         </ul>
       </div>
-      <!-- Sütun 3: About Linkleri -->
       <div class="footer__links">
         <h4 class="footer__title">About</h4>
         <ul>
@@ -78,7 +82,10 @@
       </div>
     </div>
   </footer>
-
   <script src="scripts/main.js"></script>
+  <script>
+    // Basit slider mantığı (örnek, çoklu haber için JS ile güncellenebilir)
+    // Şu an tek haber var, istersen haberleri diziye ekleyip sliderı tamamlayabilirim.
+  </script>
 </body>
 </html> 
