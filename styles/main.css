@@ -1534,23 +1534,8 @@ body.dark-mode {
 }
 .supporters__bg {
   position: absolute;
-  top: 0; left: 50%;
-  width: 1440px;
-  height: 905.79px;
-  max-width: 100vw;
-  max-height: 100vh;
-  transform: translateX(-50%);
+  top: 0; left: 0; width: 100%; height: 100%;
   z-index: 1;
-  overflow: hidden;
-}
-@media (max-width: 1440px) {
-  .supporters__bg {
-    width: 100vw;
-    height: auto;
-    min-height: 100%;
-    left: 0;
-    transform: none;
-  }
 }
 .supporters__bg img {
   width: 100%;
