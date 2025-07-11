@@ -86,6 +86,27 @@ const reinitializeDynamicScripts = () => {
   // ...diğer dinamik scriptler...
 };
 
+// Aktif menü vurgusu için JS
+const menuMap = {
+  'index3.html': 'Home',
+  'about.html': 'About',
+  'partners.html': 'Partners',
+  'news.html': 'News',
+  'contact.html': 'Contact'
+};
+
+const path = window.location.pathname.split('/').pop();
+const activeMenu = menuMap[path];
+if (activeMenu) {
+  document.querySelectorAll('.header__menu-item a').forEach(link => {
+    if (link.textContent.trim() === activeMenu) {
+      link.parentElement.classList.add('active');
+    } else {
+      link.parentElement.classList.remove('active');
+    }
+  });
+}
+
 // SPA geçişleri (fetch + History API)
 document.addEventListener('DOMContentLoaded', () => {
   const mainContent = document.getElementById('main-content');

@@ -13,8 +13,8 @@
       <div class="header__logo">GreenTech 4 Transformation</div>
       <nav class="header__nav">
         <ul class="header__menu">
-          <li class="header__menu-item"><a href="index3.html">Home</a></li>
-          <li class="header__menu-item"><a href="about.html">About</a></li>
+          <li class="header__menu-item active"><a href="index3.html">Home</a></li>
+          <li class="header__menu-item"><a href="about.html">About Us</a></li>
           <li class="header__menu-item header__menu-item--partners"><a href="partners.html">Partners</a></li>
           <li class="header__menu-item"><a href="news.html">News</a></li>
           <li class="header__menu-item"><a href="contact.html">Contact</a></li>
@@ -24,20 +24,18 @@
   </header>
 
   <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero__bg">
-      <img src="assets/images/HomeScreen/image1.png" alt="Hero Background" class="hero__bg-img" />
-      <div class="hero__overlay"></div>
+  <section class="hero-figma">
+    <div class="hero-bg">
+      <img src="assets/images/HomeScreen/image1.png" alt="Hero Background" class="hero-bg-img" />
+      <div class="hero-overlay"></div>
     </div>
-    <div class="hero__content">
-      <h1 class="hero__title">Innovating Today,<br><span>Sustaining Tomorrow</span></h1>
-    </div>
-    <div class="hero__logos">
-      <img src="assets/images/HomeScreen/2BA88654-4576-4125-90E4-6D70C69A9FED_4_5005_c 1.png" alt="EIT ve EU Logoları" class="hero__logo" />
+    <div class="hero-content-figma">
+      <h1 class="hero-title-figma">Innovating Today,<br>Sustaining Tomorrow</h1>
+      <img src="assets/images/HomeScreen/2BA88654-4576-4125-90E4-6D70C69A9FED_4_5005_c 1.png" alt="EIT ve EU Logoları" class="hero-badge-figma" />
     </div>
   </section>
 
-  <!-- İki Sütunlu Tanıtım Alanı -->
+  <!-- Our Story / Who are we? -->
   <section class="intro">
     <div class="intro__container">
       <div class="intro__content">
@@ -60,7 +58,8 @@
       <h2 class="partners__title">Who are we ?</h2>
       <p class="partners__subtitle">Full partners</p>
       <div class="partners__grid">
-        <a href="https://www.samk.fi/?gad_source=1&gad_campaignid=1848606165&gbraid=0AAAAADzIQjgk0DbvPWDxLxaABMi1U-6hT&gclid=CjwKCAjwyb3DBhBlEiwAqZLe5M1munzLW2LEdh4MWYtDQ9cEUEbXvpDG5wvISZyywe8ZzAF2DFJzYRoCo-cQAvD_BwE" target="_blank" rel="noopener" class="partner-card-link">
+        <!-- Partner kartları burada, Figma sırasına göre dizildi -->
+        <a href="https://www.samk.fi/" target="_blank" rel="noopener" class="partner-card-link">
           <div class="partner-card">
             <img src="assets/images/HomeScreen/finland_flag.png" alt="Finland Flag" class="partner-card__flag" />
             <span class="partner-card__country">Finland</span>
@@ -184,6 +183,7 @@
       </div>
     </div>
   </section>
+
   <!-- Destekçiler Alanı -->
   <section class="supporters supporters--spaced">
     <div class="supporters__bg">
@@ -204,43 +204,35 @@
     </div>
   </section>
 
-  <!-- Footer Bölümü -->
+  <!-- Footer -->
   <footer class="footer">
     <div class="footer__container">
-      <!-- Sütun 1: Marka ve Sosyal Medya -->
       <div class="footer__info">
-        <a href="#" class="footer__brand">GreenTech4Transformation</a>
-        <div class="footer__logos">
-          <div class="footer__logos-combined">
-            <img src="assets/images/eit-rawmaterials.png" alt="EIT RawMaterials Logo" class="footer__logo-img" />
-          </div>
+        <a href="index3.html" class="footer__brand">GreenTech 4 Transformation</a>
+        <div class="footer__logos-combined">
+          <img src="assets/images/EIT_RawMaterials.png" alt="EIT RawMaterials" class="footer__logo-img" />
+          <img src="assets/images/eit-rawmaterials.png" alt="EIT RawMaterials" class="footer__logo-img" />
         </div>
         <div class="footer__socials">
           <ul>
-            <li><a href="#"><img src="assets/images/HomeScreen/instagram_icon.png" alt="Instagram" /></a></li>
-            <li><a href="#"><img src="assets/images/HomeScreen/facebook_icon.png" alt="Facebook" /></a></li>
-            <li><a href="#"><img src="assets/images/HomeScreen/icon.png" alt="Behance" /></a></li>
+            <li><a href="#"><img src="assets/images/HomeScreen/facebook_icon.png" alt="Facebook"></a></li>
+            <li><a href="#"><img src="assets/images/HomeScreen/instagram_icon.png" alt="Instagram"></a></li>
           </ul>
         </div>
       </div>
-      <!-- Sütun 2: Pages Linkleri -->
       <div class="footer__links">
-        <h4 class="footer__title">Pages</h4>
+        <div class="footer__title">Links</div>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Product</a></li>
-          <li><a href="#">Blog</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="partners.html">Partners</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
-      <!-- Sütun 3: About Linkleri -->
       <div class="footer__links">
-        <h4 class="footer__title">About</h4>
+        <div class="footer__title">Contact</div>
         <ul>
-          <li><a href="#">Testimonials</a></li>
-          <li><a href="#">Our Service</a></li>
-          <li><a href="#">Contact Us</a></li>
-          <li><a href="#">Benefit</a></li>
+          <li><a href="mailto:info@greentech4transformation.eu">info@greentech4transformation.eu</a></li>
         </ul>
       </div>
     </div>
