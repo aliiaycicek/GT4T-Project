@@ -1,6 +1,6 @@
 # GreenTech 4 Transformation Web Demo
 
-Bu proje, GreenTech 4 Transformation için Figma tasarımına birebir uyumlu, responsive ve modern bir web sitesi demo sürümüdür.
+Bu proje, GreenTech 4 Transformation adına yapılış modern bir web sitesi demo sürümüdür.
 
 ## Özellikler
 - Figma'daki görsel tasarıma uygun HTML & CSS
